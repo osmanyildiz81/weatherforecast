@@ -1,0 +1,12 @@
+CREATE TABLE `simple_weather` (
+  `id` int(11) NOT NULL AUTO_INCREMENT,
+  `city_name` varchar(45) NOT NULL,
+  `temperature` decimal(5,2) NOT NULL,
+  `weather_condition` varchar(45) NOT NULL,
+  `humidity` int(11) NOT NULL,
+  `wind_speed` decimal(5,2) NOT NULL,
+  `country` varchar(45) NOT NULL,
+  `date_time` datetime DEFAULT NULL,
+  PRIMARY KEY (`id`),
+  UNIQUE KEY `id_UNIQUE` (`id`)
+) ENGINE=InnoDB AUTO_INCREMENT=22 DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_0900_ai_ci
